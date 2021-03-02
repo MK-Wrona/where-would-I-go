@@ -8,22 +8,27 @@
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
+    outline: 1px solid royalblue;
+    ;
 }
+
 .header {
-    width: 80%;
-    border: 1px solid royalblue;
+    max-width: 100%;
     margin: 0 auto;
-}
-.header__links {
     display: flex;
-    align-items: flex-end;
+}
+
+.header__links {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
     margin: 0;
     padding: 0;
     list-style: none;
 }
-.list-links__item {
-    
-}
+
+.list-links__item {}
+
 .list-links__link {
     text-decoration: none;
     color: black;
