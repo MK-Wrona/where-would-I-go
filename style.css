@@ -1,78 +1,166 @@
-        .page {
-            max-width: 1337px;
-            border: 1px solid royalblue;
-            margin: 50px auto 0;
-            font-family: 'Inter';
-            -moz-osx-font-smoothing: grayscale;
-            -webkit-font-smoothing: antialiased;
-            -webkit-text-size-adjust: 100%;
-            -ms-text-size-adjust: 100%;
-            -moz-text-size-adjust: 100%;
-        }
-        
-        .header {
-            max-width: 1069px;
-            margin: 0 auto;
-            display: flex;
-        }
-        
-        .header__links {
-            min-width: 1069px;
-            display: flex;
-            list-style: none;
-            flex-direction: row;
-            justify-content: flex-start;
-            margin: 0;
-            padding: 0;
-            position: relative;
-        }
-        
-        .list-links__item {
-            max-width: fit-content;
-            display: flex;
-        }
-        
-        .list-links__item:last-child {
-            display: flex;
-            position: absolute;
-            right: 0;
-            top: 0;
-        }
-        
-        .list-links__link {
-            text-decoration: none;
-            color: black;
-            margin-right: 30px;
-        }
-        
-        .list-links__link:nth-of-type(4) {
-            margin-right: 0px;
-        }
-        
-        .video {
-            margin: 0;
-            padding: 0;
-            min-width: 100%;
-            max-height: 400px;
-        }
-        
-        .video__item {
-            border: 0;
-            min-width: 100%;
-            min-height: 400px;
-        }
-        
-        .footer {
-            min-height: 400px;
-            background-color: #fecda7;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0;
-            padding: 0;
-        }
-        
-        .footer__copyright {
-            display: flex;
-            text-align: center;
-        }
+                .page {
+                    max-width: 1337px;
+                    border: 1px solid royalblue;
+                    margin: 50px auto 0;
+                    font-family: 'Inter';
+                    -moz-osx-font-smoothing: grayscale;
+                    -webkit-font-smoothing: antialiased;
+                    -webkit-text-size-adjust: 100%;
+                    -ms-text-size-adjust: 100%;
+                    -moz-text-size-adjust: 100%;
+                }
+                
+                 ::-webkit-input-placeholder {
+                    /* Chrome */
+                    color: black;
+                }
+                
+                .header {
+                    max-width: 1069px;
+                    margin: 0 auto;
+                    display: flex;
+                }
+                
+                .header__links {
+                    min-width: 1069px;
+                    display: flex;
+                    list-style: none;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    margin: 0;
+                    padding: 0;
+                    position: relative;
+                }
+                
+                .list-links__item {
+                    max-width: fit-content;
+                    display: flex;
+                }
+                
+                .list-links__item:last-child {
+                    display: flex;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
+                
+                .list-links__link {
+                    text-decoration: none;
+                    color: black;
+                    margin-right: 30px;
+                }
+                
+                .list-links__link:nth-of-type(4) {
+                    margin-right: 0px;
+                }
+                
+                .schedule {
+                    min-height: 400px;
+                    display: flex;
+                    flex-direction: row;
+                }
+                
+                .schedule__form {
+                    width: 50%;
+                    min-height: 100%;
+                    background-color: #f2f2f2;
+                    display: flex;
+                    padding: 10% 5% 10%;
+                    flex-direction: column;
+                }
+                
+                .schedule__title {
+                    font-size: 40px;
+                    line-height: 1;
+                    max-width: 300px;
+                }
+                
+                .schedule__fieldset {
+                    display: flex;
+                    flex-direction: column;
+                    border: 0;
+                    max-width: 75%;
+                    margin: 0;
+                    padding: 0;
+                }
+                
+                .schedule__pic {
+                    width: 50%;
+                    min-height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                }
+                
+                .schedule__input {
+                    display: flex;
+                    border: 0;
+                    padding: 5px 10px 5px;
+                    font-family: "Inter";
+                    background-color: white;
+                    color: black;
+                    box-sizing: border-box;
+                }
+                
+                .schedule__textarea {
+                    margin: 10px 0 10px;
+                    border: 0;
+                    background-color: white;
+                    color: black;
+                    padding: 5px 10px 5px;
+                    font-family: "Inter";
+                    resize: none;
+                }
+                
+                .schedule__button {
+                    background-color: black;
+                    padding: 10px 10px 10px;
+                    border: 0;
+                    color: white;
+                    max-width: 50%;
+                    display: flex;
+                    align-self: flex-end;
+                    cursor: pointer;
+                }
+                
+                .schedule__button:hover {
+                    transition: ease 1s;
+                    background-color: #f2f2f2;
+                    color: black;
+                }
+                
+                .video {
+                    margin: 0;
+                    padding: 0;
+                    min-width: 100%;
+                    min-height: 500px;
+                }
+                
+                .video__item {
+                    border: 0;
+                    min-width: 100%;
+                    min-height: 500px;
+                    background-image: url(./images/video.jpg);
+                    background-size: cover;
+                    z-index: 1;
+                }
+                
+                .video__item iframe {
+                    height: 100%;
+                    width: 100%;
+                    z-index: 0;
+                }
+                
+                .footer {
+                    min-height: 400px;
+                    background-color: #fecda7;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0;
+                    padding: 0;
+                }
+                
+                .footer__copyright {
+                    display: flex;
+                    text-align: center;
+                }
